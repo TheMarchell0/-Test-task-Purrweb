@@ -15,7 +15,6 @@
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 29px;
             &-title {
-                font-family: "Proxima Nova", sans-serif;
                 font-size: 14px;
                 line-height: 20px;
                 text-transform: uppercase;
@@ -48,7 +47,6 @@
                 padding-bottom: 0;
             }
             & a {
-                font-family: "Proxima Nova", sans-serif;
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
@@ -60,7 +58,6 @@
                 }
             }
             & span {
-                font-family: "Proxima Nova", sans-serif;
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
