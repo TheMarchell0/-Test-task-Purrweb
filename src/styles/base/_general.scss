@@ -5,7 +5,8 @@ h4,
 h5,
 h6,
 ul,
-body {
+body,
+p {
     margin: 0;
     padding: 0;
 }
@@ -28,7 +29,7 @@ body {
 }
 
 body {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: "Proxima Nova", sans-serif;
 }
 
 button {
@@ -68,6 +69,7 @@ input[type="radio"] {
     --gray: #3d3d3d;
     --black: #252525;
     --footerbg: #363636;
+    --formbg: #232323;
     --defaultTransition: 0.3s ease all;
 }
 
@@ -78,13 +80,84 @@ input[type="radio"] {
     background-position: top;
 }
 
-.main-button {
-    background: var(--orange);
-    color: var(--white);
-    font-family: 'Proxima Nova';
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--white);
-    text-transform: uppercase;
+.contact {
+    background: var(--formbg);
+    position: relative;
+    overflow: hidden;
+    &::after,
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+        width: 746px;
+        height: 757px;
+        opacity: 0.33;
+        filter: blur(250px);
+        border-radius: 373.431px;
+        transform: rotate(-122.79deg);
+        z-index: -1;
+    }
+    &::before {
+        top: 0;
+        left: 0;
+    }
+    &::after {
+        bottom: 0;
+        right: 0;
+    }
+    &__container {
+        padding: 0 200px;
+    }
+    &__wrapper {
+        padding: 128px 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__info-title {
+        font-family: "Proxima Nova";
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 55px;
+        color: var(--white);
+    }
+    &-form {
+        &__title {
+            font-family: "Proxima Nova";
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1;
+            letter-spacing: -1px;
+            color: #ffffff;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    max-width: 640px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-item {
+        max-width: 308px;
+        width: 100%;
+        &_w100 {
+            max-width: 100%;
+        }
+        &__label {
+            font-family: "Proxima Nova";
+            font-size: 13px;
+            line-height: 1;
+            color: var(--white);
+        }
+        &__input,
+        &__textarea {
+            background: var(--white);
+            border: 1px solid #292929;
+            border-radius: 8px;
+        }
+    }
 }

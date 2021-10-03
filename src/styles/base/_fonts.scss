@@ -1,3 +1,5 @@
+/*Proxima Nova:*/
+
 @font-face {
     font-family: 'Proxima Nova';
     src: url('/fonts/Proxima-Nova/ProximaNova-Bold.eot');
@@ -11,5 +13,16 @@
     src: url('/fonts/Proxima-Nova/ProximaNova-Semibold.eot');
     src: local('/fonts/Proxima-Nova/Proxima Nova Semibold'), local('ProximaNova-Semibold'), url('/fonts/Proxima-Nova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'), url('/fonts/Proxima-Nova/ProximaNova-Semibold.woff2') format('woff2'), url('/fonts/Proxima-Nova/ProximaNova-Semibold.woff') format('woff'), url('/fonts/Proxima-Nova/ProximaNova-Semibold.ttf') format('truetype');
     font-weight: 600;
+    font-style: normal;
+}
+
+
+/*Raleway:*/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/Raleway-Light.eot');
+    src: url('/fonts/Raleway/Raleway-Light.woff2') format('woff2'), url('/fonts/Raleway/Raleway-Light.woff') format('woff'), url('/fonts/Raleway/Raleway-Light.ttf') format('truetype');
+    font-weight: 200;
     font-style: normal;
 }

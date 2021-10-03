@@ -92,7 +92,8 @@
                         <img src="/img/whatWeDo_pic4.svg" alt="whatWeDo_pic4">
                         <p class="possibilities__list-title">Contemporary authentication methods</p>
                         <p class="possibilities__list-subtitle">Echidna authentication server to enable adaptive risk-based approach to security through a range of methods for different levels of authentication assurance from SMS OTPs, Challenge/Response, to more contemporary QR code signing
-                            and advanced connected mobile security tokens capable of transaction signatures with dynamic linking of the transaction context and addition of PIN, Fingerprint and other biometrics.</p>
+                            and advanced connected mobile security tokens capable of transaction signatures with dynamic linking of the transaction context and addition of PIN, Fingerprint and other biometrics.
+                        </p>
                     </li>
                     <li class="possibilities__list-item">
                         <img src="/img/whatWeDo_pic5.svg" alt="whatWeDo_pic5">
@@ -121,30 +122,32 @@
         </section>
         <section class="test-page__contact contact">
             <div class="contact__container container">
-                <div class="contact__info">
-                    <p class="contact__info-title">Ready to get started?</p>
-                </div>
-                <div class="contact__form">
-                    <p>Contact us</p>
-                    <form action="#">
-                        <div class="input-item">
-                            <label for="#">First Name</label>
-                            <input type="text">
-                        </div>
-                        <div class="input-item">
-                            <label for="#">Last Name</label>
-                            <input type="text">
-                        </div>
-                        <div class="input-item">
-                            <label for="#">Email Address</label>
-                            <input type="text">
-                        </div>
-                        <div class="input-item">
-                            <label for="#">Your message</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <input type="submit" class="main-button" value="Send">
-                    </form>
+                <div class="contact__wrapper">
+                    <div class="contact__info">
+                        <p class="contact__info-title">Ready<br>to get started?</p>
+                    </div>
+                    <div class="contact__contact-form contact-form">
+                        <p class="contact-form__title">Contact us</p>
+                        <form class="contact-form__form form" action="#">
+                            <div class="form-item">
+                                <label class="form-item__label" for="form-firstname">First Name</label>
+                                <input class="form-item__input" id="form-firstname" type="text" placeholder="First Name">
+                            </div>
+                            <div class="form-item">
+                                <label class="form-item__label" for="form-lastname">Last Name</label>
+                                <input class="form-item__input" id="form-lastname" type="text" placeholder="Last Name">
+                            </div>
+                            <div class="form-item form-item_w100">
+                                <label class="form-item__label" for="form-email">Email Address</label>
+                                <input class="form-item__input" id="form-email" type="text" placeholder="Email Address">
+                            </div>
+                            <div class="form-item">
+                                <label class="form-item__label" for="form-message">Your message</label>
+                                <textarea class="form-item__textarea" id="form-message" placeholder="Textarea"></textarea>
+                            </div>
+                            <input type="submit" class="main-button" value="Send">
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

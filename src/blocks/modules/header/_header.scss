@@ -21,6 +21,7 @@
         & img {
             width: 100%;
             height: 100%;
+            -o-object-fit: cover;
             object-fit: cover;
         }
     }
@@ -53,14 +54,6 @@
                         transition: var(--defaultTransition);
                         transform: translate(-50%, 0);
                         background: var(--orange);
-                        -webkit-transform: translate(-50%, 0);
-                        -moz-transform: translate(-50%, 0);
-                        -ms-transform: translate(-50%, 0);
-                        -o-transform: translate(-50%, 0);
-                        -webkit-transition: var(--defaultTransition);
-                        -moz-transition: var(--defaultTransition);
-                        -ms-transition: var(--defaultTransition);
-                        -o-transition: var(--defaultTransition);
                     }
                     &:hover {
                         &::after {
