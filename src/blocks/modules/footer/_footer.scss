@@ -1,0 +1,112 @@
+.footer {
+    background: var(--footerbg);
+    &__container {
+        padding: 0 32px 0 224px;
+    }
+    &__wrapper {
+        padding: 55px 0 46px;
+    }
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 29px;
+            &-title {
+                font-family: "Proxima Nova", sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: var(--orange);
+                position: relative;
+                padding-left: 25px;
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    left: 0;
+                    background: url("/img/svg/orange-pentagon.svg") no-repeat center;
+                    width: 18px;
+                    height: 20px;
+                }
+            }
+        }
+        &-logo {
+            align-self: flex-end;
+            margin-bottom: -17px;
+        }
+    }
+    &-info-list {
+        padding: 21px 0;
+        &__item {
+            padding-bottom: 8px;
+            &:last-child {
+                padding-bottom: 0;
+            }
+            & a {
+                font-family: "Proxima Nova", sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: var(--white);
+                transition: var(--defaultTransition);
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+            & span {
+                font-family: "Proxima Nova", sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: var(--white);
+                transition: var(--defaultTransition);
+                padding-right: 15px;
+            }
+        }
+    }
+    &__bottom {
+        background: var(--black);
+        &-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 0;
+            &-text {
+                font-family: "Raleway", sans-serif;
+                font-weight: 200;
+                font-size: 10px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: var(--white);
+                position: relative;
+                padding-right: 12px;
+                padding-left: 3px;
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 4px;
+                    background-image: url("/img/svg/orange-pentagon.svg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 9px;
+                    height: 10px;
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
