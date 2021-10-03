@@ -71,7 +71,8 @@
         "yargs": "^15.4.1"
     },
     "dependencies": {
-        "smart-grid": "^2.1.2"
+        "smart-grid": "^2.1.2",
+        "swiper": "^7.0.7"
     },
     "husky": {
         "hooks": {

@@ -28,7 +28,11 @@ body {
 }
 
 body {
-    font-family: 'Codec Warm', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+button {
+    border: none;
 }
 
 a {
@@ -57,14 +61,30 @@ input[type="radio"] {
 }
 
 :root {
-    --trueBlack: #000000;
-    --pseudoBlack: #0C0C0C;
-    --white: #FFFFFF;
-    --green: #B6CF70;
-    --toxicGreen: #C8D24E;
-    --darkGreen: #686E29;
-    --orange: #FF4016;
-    --orangeHover: #C02300;
-    --logoHover: #4D36F3;
+    --white: #ffffff;
+    --orange: #ff8b00;
+    --purple: #7050e5;
+    --lightGray: #878787;
+    --gray: #3d3d3d;
+    --black: #252525;
+    --footerbg: #363636;
     --defaultTransition: 0.3s ease all;
+}
+
+.info-slider {
+    background-image: url("/img/purple_bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.main-button {
+    background: var(--orange);
+    color: var(--white);
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--white);
+    text-transform: uppercase;
 }
