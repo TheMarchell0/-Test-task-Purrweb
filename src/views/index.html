@@ -1,34 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Тестовое задание</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    @@include("../blocks/modules/header/header.html")
+    <main class="test-page">
+        <section class="test-page__achievements achievements">
+            <div class="achievements__container container">
+                <ul class="achievements__list">
+                    <li class="achievements__list-item achievements__item">
+                        <p class="achievements__title">126,300</p>
+                        <p class="achievements__subtitle">Identity Theft Cases Reported in Australia</p>
+                    </li>
+                    <li class="achievements__list-item achievements__item">
+                        <p class="achievements__title">$20.1bn</p>
+                        <p class="achievements__subtitle">Online Transactions per annum by Australians</p>
+                    </li>
+                    <li class="achievements__list-item achievements__item">
+                        <p class="achievements__title">45,511</p>
+                        <p class="achievements__subtitle">Online Fraud Cases Reported in Australia</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="test-page__possibilities possibilities">
+            <div class="possibilities__container container">
+                <p class="possibilities__title">What We Do</p>
+                <ul class="possibilities__list">
+                    <li class="possibilities__list-item">
+                        <img src="" alt="">
+                        <p class="possibilities__list-title">Device Authentication</p>
+                        <p class="possibilities__list-subtitle">Hardware-based device fingerprinting resilient to cloning, malware and device jailbreak/root. Hardware-level control over the displayed UI independent of the device operating system. Hardware-level data protection.</p>
+                    </li>
+                    <li class="possibilities__list-item">
+                        <img src="" alt="">
+                        <p class="possibilities__list-title">User Authentication</p>
+                        <p class="possibilities__list-subtitle">Verify the identity of users for access control with contemporary biometric connected MFA security tokens.</p>
+                    </li>
+                    <li class="possibilities__list-item">
+                        <img src="" alt="">
+                        <p class="possibilities__list-title">Transaction Authentication</p>
+                        <p class="possibilities__list-subtitle">High assurance out-of-band authentication of high impact transactions and instructions initiated through electronic service delivery channels. Audit trail of verification for non-repudiation. Fraud protection against man-in-the-middle
+                            and browser malware.</p>
+                    </li>
+                    <li class="possibilities__list-item">
+                        <img src="" alt="">
+                        <p class="possibilities__list-title">Contemporary authentication methods</p>
+                        <p class="possibilities__list-subtitle">Echidna authentication server to enable adaptive risk-based approach to security through a range of methods for different levels of authentication assurance from SMS OTPs, Challenge/Response, to more contemporary QR code signing
+                            and advanced connected mobile security tokens capable of transaction signatures with dynamic linking of the transaction context and addition of PIN, Fingerprint and other biometrics.</p>
+                    </li>
+                    <li class="possibilities__list-item">
+                        <img src="" alt="">
+                        <p class="possibilities__list-title">HSM Solutions</p>
+                        <p class="possibilities__list-subtitle">Reseller of Thales nShield HSMs with professional services and subject matter expertise in HSMs, key ceremony procedures, and SEE code development. </p>
+                    </li>
+                    <li class="possibilities__list-item">
+                        <img src="" alt="">
+                        <p class="possibilities__list-title">Cloud & IoT Security</p>
+                        <p class="possibilities__list-subtitle">Secure the identity and access of users, devices and Internet of Things connecting into the cloud. Support cloud adoption and migration of applications and data into private and public clouds.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="test-page__">
+            <div class="container">
+                <div class="info">
+                    <p class="title">Product Spotlight</p>
+                    <p class="subtitle">Salt mSign Connected Token is a contemporary mobile security 2FA token for authentication of user identity and verification of transactions independent of the delivery channel that initiated the request.</p>
+                    <button><span>More info</span></button>
+                </div>
+            </div>
+            <div class="video">
+                <p>тут видео</p>
+            </div>
+        </section>
+        <section class="test-page__contact contact">
+            <div class="contact__container container">
+                <div class="contact__info">
+                    <p class="contact__info-title">Ready to get started?</p>
+                </div>
+                <div class="contact__form">
+                    <p>Contact us</p>
+                    <form action="#">
+                        <div class="input-item">
+                            <label for="#">First Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-item">
+                            <label for="#">Last Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-item">
+                            <label for="#">Email Address</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-item">
+                            <label for="#">Your message</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/main.js"></script>
+</body>
+
 </html>

@@ -1,12 +1,70 @@
-h1, h2, h3, h4, h5, h6, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+body {
     margin: 0;
     padding: 0;
 }
 
-.container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*Общие стили:*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Codec Warm', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*Убираем дефолтные чекбоксы/радиобатоны, чтобы потом нарисовать их через псевдоэлементы*/
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+:root {
+    --trueBlack: #000000;
+    --pseudoBlack: #0C0C0C;
+    --white: #FFFFFF;
+    --green: #B6CF70;
+    --toxicGreen: #C8D24E;
+    --darkGreen: #686E29;
+    --orange: #FF4016;
+    --orangeHover: #C02300;
+    --logoHover: #4D36F3;
+    --defaultTransition: 0.3s ease all;
 }
