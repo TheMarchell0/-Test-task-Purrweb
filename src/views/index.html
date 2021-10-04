@@ -7,63 +7,87 @@
     <title>Тестовое задание</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/img/favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
     @@include("../blocks/modules/header/header.html")
     <main class="test-page">
+        <h1 class="visually-hidden">Главная страница тестового задания</h1>
         <section class="test-page__info-slider info-slider">
-            <div class="info-slider__container">
-                <ul class="info-slider__list slider-list">
-                    <li class="slider-list__item">
-                        <div class="slider-list__text">
-                            <p class="slider-list__text-title">Device Authentication</p>
-                            <p class="slider-list__text-subtitle">SALT Group is a world leader in authentication and security. We havea range of services to improve user authentication. Discover the possibilities with SALT.</p>
-                            <button class="slider-list__text-button main-button"><span>Get started</span></button>
-                        </div>
-                        <div class="slider-list__picture">
-                            <img src="/img/svg/twitter-icon.svg" alt="twitter-icon">
-                        </div>
-                    </li>
-                    <li class="slider-list__item">
-                        <div class="slider-list__text">
-                            <p class="slider-list__text-title">Device Authentication</p>
-                            <p class="slider-list__text-subtitle">SALT Group is a world leader in authentication and security. We havea range of services to improve user authentication. Discover the possibilities with SALT.</p>
-                            <button class="slider-list__text-button main-button"><span>Get started</span></button>
-                        </div>
-                        <div class="slider-list__picture">
-                            <img src="/img/svg/twitter-icon.svg" alt="twitter-icon">
-                        </div>
-                    </li>
-                </ul>
+            <div class="info-slider__wrapper">
+                <div class="swiper-container js-slider js-slider--main">
+                    <div class="swiper-pagination info-slider__pagination"></div>
+                    <ul class="info-slider__list slider-list swiper-wrapper">
+                        <li class="slider-list__item swiper-slide">
+                            <div class="slider-list__container">
+                                <div class="slider-list__text">
+                                    <h2 class="slider-list__text-title">Device Authentication</h2>
+                                    <p class="slider-list__text-subtitle">SALT Group is a world leader in authentication and security. We have a range of services to improve user authentication. Discover the possibilities with SALT.</p>
+                                    <button class="slider-list__text-button main-button"><span>Get
+                                            started</span></button>
+                                </div>
+                                <div class="slider-list__picture">
+                                    <img src="/img/svg/twitter-icon.svg" alt="twitter-icon">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-list__item swiper-slide">
+                            <div class="slider-list__container">
+                                <div class="slider-list__text">
+                                    <h2 class="slider-list__text-title">Device Authentication</h2>
+                                    <p class="slider-list__text-subtitle">SALT Group is a world leader in authentication and security. We have a range of services to improve user authentication. Discover the possibilities with SALT.</p>
+                                    <button class="slider-list__text-button main-button"><span>Get started</span></button>
+                                </div>
+                                <div class="slider-list__picture">
+                                    <img src="/img/svg/twitter-icon.svg" alt="twitter-icon">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-list__item swiper-slide">
+                            <div class="slider-list__container">
+                                <div class="slider-list__text">
+                                    <h2 class="slider-list__text-title">Device Authentication</h2>
+                                    <p class="slider-list__text-subtitle">SALT Group is a world leader in authentication and security. We have a range of services to improve user authentication. Discover the possibilities with SALT.</p>
+                                    <button class="slider-list__text-button main-button"><span>Get started</span></button>
+                                </div>
+                                <div class="slider-list__picture">
+                                    <img src="/img/svg/twitter-icon.svg" alt="twitter-icon">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div class="info-slider__anchor">
-                    <p class="info-slider__anchor-text">Find out more</p>
-                    <img src="/img/svg/more-button.svg" alt="more-button">
+                    <a href="#start-section" class="js-anchor">
+                        <p class="info-slider__anchor-text">Find out more</p>
+                        <img src="/img/svg/more-button.svg" alt="more-button">
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="test-page__achievements achievements">
+        <section class="test-page__achievements achievements" id="start-section">
             <div class="achievements__container">
                 <ul class="achievements__list">
                     <li class="achievements__list-item achievements__item">
                         <p class="achievements__title">126,300</p>
-                        <p class="achievements__subtitle">Identity Theft Cases Reported in Australia</p>
+                        <h2 class="achievements__subtitle">Identity Theft Cases Reported in Australia</h2>
                     </li>
                     <li class="achievements__list-item achievements__item">
                         <p class="achievements__title">$20.1bn</p>
-                        <p class="achievements__subtitle">Online Transactions per annum by Australians</p>
+                        <h2 class="achievements__subtitle">Online Transactions per annum by Australians</h2>
                     </li>
                     <li class="achievements__list-item achievements__item">
                         <p class="achievements__title">45,511</p>
-                        <p class="achievements__subtitle">Online Fraud Cases Reported in Australia</p>
+                        <h2 class="achievements__subtitle">Online Fraud Cases Reported in Australia</h2>
                     </li>
                 </ul>
             </div>
@@ -71,27 +95,27 @@
         <section class="test-page__possibilities possibilities">
             <div class="possibilities__container">
                 <div class="possibilities__wrapper">
-                    <p class="possibilities__title">What We Do</p>
+                    <h2 class="possibilities__title">What We Do</h2>
                     <ul class="possibilities__list">
                         <li class="possibilities__list-item">
                             <div class="possibilities__img-wrap">
                                 <img src="/img/whatWeDo_pic1.svg" alt="whatWeDo_pic1">
                             </div>
-                            <p class="possibilities__list-title">Device Authentication</p>
+                            <h3 class="possibilities__list-title">Device Authentication</h3>
                             <p class="possibilities__list-subtitle">Hardware-based device fingerprinting resilient to cloning, malware and device jailbreak/root. Hardware-level control over the displayed UI independent of the device operating system. Hardware-level data protection.</p>
                         </li>
                         <li class="possibilities__list-item">
                             <div class="possibilities__img-wrap">
                                 <img src="/img/whatWeDo_pic2.svg" alt="whatWeDo_pic2">
                             </div>
-                            <p class="possibilities__list-title">User Authentication</p>
+                            <h3 class="possibilities__list-title">User Authentication</h3>
                             <p class="possibilities__list-subtitle">Verify the identity of users for access control with contemporary biometric connected MFA security tokens.</p>
                         </li>
                         <li class="possibilities__list-item">
                             <div class="possibilities__img-wrap">
                                 <img src="/img/whatWeDo_pic3.svg" alt="whatWeDo_pic3">
                             </div>
-                            <p class="possibilities__list-title">Transaction Authentication</p>
+                            <h3 class="possibilities__list-title">Transaction Authentication</h3>
                             <p class="possibilities__list-subtitle">High assurance out-of-band authentication of high impact transactions and instructions initiated through electronic service delivery channels. Audit trail of verification for non-repudiation. Fraud protection against man-in-the-middle
                                 and browser malware.</p>
                         </li>
@@ -99,7 +123,7 @@
                             <div class="possibilities__img-wrap">
                                 <img src="/img/whatWeDo_pic4.svg" alt="whatWeDo_pic4">
                             </div>
-                            <p class="possibilities__list-title">Contemporary authentication methods</p>
+                            <h3 class="possibilities__list-title">Contemporary authentication methods</h3>
                             <p class="possibilities__list-subtitle">Echidna authentication server to enable adaptive risk-based approach to security through a range of methods for different levels of authentication assurance from SMS OTPs, Challenge/Response, to more contemporary QR code signing
                                 and advanced connected mobile security tokens capable of transaction signatures with dynamic linking of the transaction context and addition of PIN, Fingerprint and other biometrics.
                             </p>
@@ -108,14 +132,14 @@
                             <div class="possibilities__img-wrap">
                                 <img src="/img/whatWeDo_pic5.svg" alt="whatWeDo_pic5">
                             </div>
-                            <p class="possibilities__list-title">HSM Solutions</p>
+                            <h3 class="possibilities__list-title">HSM Solutions</h3>
                             <p class="possibilities__list-subtitle">Reseller of Thales nShield HSMs with professional services and subject matter expertise in HSMs, key ceremony procedures, and SEE code development. </p>
                         </li>
                         <li class="possibilities__list-item">
                             <div class="possibilities__img-wrap">
                                 <img src="/img/whatWeDo_pic6.svg" alt="whatWeDo_pic6">
                             </div>
-                            <p class="possibilities__list-title">Cloud & IoT Security</p>
+                            <h3 class="possibilities__list-title">Cloud & IoT Security</h3>
                             <p class="possibilities__list-subtitle">Secure the identity and access of users, devices and Internet of Things connecting into the cloud. Support cloud adoption and migration of applications and data into private and public clouds.</p>
                         </li>
                     </ul>
@@ -126,20 +150,22 @@
             <div class="product__container">
                 <div class="product__wrapper">
                     <div class="product__info">
-                        <p class="product__info-title">Product Spotlight</p>
+                        <h2 class="product__info-title">Product Spotlight</h2>
                         <p class="product__info-subtitle">Salt mSign Connected Token is a contemporary mobile security 2FA
                             <br>token for authentication of user identity and verification of transactions
-                            <br>independent of the delivery channel that initiated the request.</p>
+                            <br>independent of the delivery channel that initiated the request.
+                        </p>
                         <button class="product__info-button main-button"><span>More info</span></button>
                     </div>
-                    <div class="product__video video">
+                    <div class="product__video video js-youtube-parent">
                         <div class="video__bg"></div>
-                        <a href="#" class="video__link"></a>
+                        <a href="#" class="video__link js-video-init" data-link-video="https://youtu.be/5lCRsLjMeso"></a>
                         <div class="video__wrapper">
                             <p class="video__subtitle">Feature Video</p>
                             <p class="video__title">mSign Connected token</p>
                         </div>
                     </div>
+                    <button class="product__info-button product__info-button_mobile main-button main-button_mobile"><span>More info</span></button>
                 </div>
             </div>
         </section>
@@ -147,10 +173,10 @@
             <div class="contact__container">
                 <div class="contact__wrapper">
                     <div class="contact__info">
-                        <p class="contact__info-title">Ready<br>to get started?</p>
+                        <p class="contact__info-title">Ready to get started?</p>
                     </div>
                     <div class="contact__contact-form contact-form">
-                        <p class="contact-form__title">Contact us</p>
+                        <h2 class="contact-form__title">Contact us</h2>
                         <form class="contact-form__form form" action="#">
                             <div class="form-item">
                                 <label class="form-item__label" for="form-firstname">First Name</label>
@@ -168,7 +194,7 @@
                                 <label class="form-item__label" for="form-message">Your message</label>
                                 <textarea class="form-item__textarea" id="form-message" placeholder="Textarea" required></textarea>
                             </div>
-                            <button type="submit" class=" form__button main-button">Send</button>
+                            <button type="submit" class="form__button main-button">Send</button>
                         </form>
                     </div>
                 </div>
@@ -177,6 +203,8 @@
     </main>
     @@include("../blocks/modules/footer/footer.html")
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api?ver=5.8" id="youtube-js"></script>
 </body>
 
 </html>

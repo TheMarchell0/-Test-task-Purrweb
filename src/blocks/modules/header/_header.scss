@@ -1,5 +1,5 @@
 .header {
-    display: none;
+    transition: var(--defaultTransition);
     &_colored {
         background: var(--purple);
     }
@@ -7,6 +7,26 @@
     width: 100%;
     top: 0;
     left: 0;
+    &__burger {
+        background: url("/img/svg/burger.svg") no-repeat center;
+        background-size: cover;
+        width: 32px;
+        height: 32px;
+        display: none;
+        &:focus {
+            outline: none;
+        }
+        &_active {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+            background: url("/img/svg/close.svg") no-repeat center;
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+        }
+    }
     &__container {
         padding: 0 223px;
     }
@@ -38,13 +58,13 @@
                 & a {
                     font-weight: bold;
                     font-size: 15px;
-                    line-height: 18px;
+                    line-height: 1.8;
                     color: var(--white);
                     text-transform: uppercase;
                     position: relative;
                     padding-bottom: 8px;
                     &::after {
-                        content: '';
+                        content: "";
                         display: block;
                         height: 3px;
                         width: 0;
@@ -54,6 +74,14 @@
                         transition: var(--defaultTransition);
                         transform: translate(-50%, 0);
                         background: var(--orange);
+                        -webkit-transition: var(--defaultTransition);
+                        -moz-transition: var(--defaultTransition);
+                        -ms-transition: var(--defaultTransition);
+                        -o-transition: var(--defaultTransition);
+                        -webkit-transform: translate(-50%, 0);
+                        -moz-transform: translate(-50%, 0);
+                        -ms-transform: translate(-50%, 0);
+                        -o-transform: translate(-50%, 0);
                     }
                     &:hover {
                         &::after {
@@ -66,5 +94,53 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: $laptop) {
+    .header__mobile-menu {
+        width: 100%;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        transition: var(--defaultTransition);
+        -webkit-transition: var(--defaultTransition);
+        -moz-transition: var(--defaultTransition);
+        -ms-transition: var(--defaultTransition);
+        -o-transition: var(--defaultTransition);
+        background: var(--purple);
+        &_active {
+            right: 0;
+        }
+    }
+    .header__nav-list {
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        padding-top: 100px;
+        &-item {
+            padding-right: initial;
+            padding-top: initial;
+            padding-bottom: 16px;
+            & a {
+                font-size: 24px;
+            }
+        }
+    }
+    .header__burger {
+        display: block;
+    }
+}
+
+@media (max-width: $mobile-only) {
+    .header__logo {
+        height: 50px;
+        max-width: 39px;
+    }
+    .header__wrapper {
+        padding: 28px 0;
+    }
+    .header__container {
+        padding: 0 28px;
     }
 }
