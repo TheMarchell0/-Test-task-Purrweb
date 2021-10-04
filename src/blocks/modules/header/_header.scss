@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     &__burger {
-        background: url("/img/svg/burger.svg") no-repeat center;
+        background: url("img/svg/burger.svg") no-repeat center;
         background-size: cover;
         width: 32px;
         height: 32px;
@@ -21,7 +21,7 @@
             top: 10px;
             right: 10px;
             z-index: 1;
-            background: url("/img/svg/close.svg") no-repeat center;
+            background: url("img/svg/close.svg") no-repeat center;
             background-size: cover;
             width: 30px;
             height: 30px;

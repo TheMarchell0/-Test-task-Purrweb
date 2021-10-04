@@ -2,24 +2,24 @@
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/fonts/Proxima-Nova/ProximaNova-Regular.eot');
-    src: local('/fonts/Proxima-Nova/Proxima Nova Regular'), local('ProximaNova-Regular'), url('/fonts/Proxima-Nova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/Proxima-Nova/ProximaNova-Regular.woff2') format('woff2'), url('/fonts/Proxima-Nova/ProximaNova-Regular.woff') format('woff'), url('/fonts/Proxima-Nova/ProximaNova-Regular.ttf') format('truetype');
+    src: url('fonts/Proxima-Nova/ProximaNova-Regular.eot');
+    src: local('fonts/Proxima-Nova/Proxima Nova Regular'), local('ProximaNova-Regular'), url('fonts/Proxima-Nova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Proxima-Nova/ProximaNova-Regular.woff2') format('woff2'), url('fonts/Proxima-Nova/ProximaNova-Regular.woff') format('woff'), url('/fonts/Proxima-Nova/ProximaNova-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/fonts/Proxima-Nova/ProximaNova-Bold.eot');
-    src: local('/fonts/Proxima-Nova/Proxima Nova Bold'), local('ProximaNova-Bold'), url('/fonts/Proxima-Nova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/Proxima-Nova/ProximaNova-Bold.woff2') format('woff2'), url('/fonts/Proxima-Nova/ProximaNova-Bold.woff') format('woff'), url('/fonts/Proxima-Nova/ProximaNova-Bold.ttf') format('truetype');
+    src: url('fonts/Proxima-Nova/ProximaNova-Bold.eot');
+    src: local('fonts/Proxima-Nova/Proxima Nova Bold'), local('ProximaNova-Bold'), url('fonts/Proxima-Nova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Proxima-Nova/ProximaNova-Bold.woff2') format('woff2'), url('fonts/Proxima-Nova/ProximaNova-Bold.woff') format('woff'), url('fonts/Proxima-Nova/ProximaNova-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/fonts/Proxima-Nova/ProximaNova-Semibold.eot');
-    src: local('/fonts/Proxima-Nova/Proxima Nova Semibold'), local('ProximaNova-Semibold'), url('/fonts/Proxima-Nova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'), url('/fonts/Proxima-Nova/ProximaNova-Semibold.woff2') format('woff2'), url('/fonts/Proxima-Nova/ProximaNova-Semibold.woff') format('woff'), url('/fonts/Proxima-Nova/ProximaNova-Semibold.ttf') format('truetype');
+    src: url('fonts/Proxima-Nova/ProximaNova-Semibold.eot');
+    src: local('fonts/Proxima-Nova/Proxima Nova Semibold'), local('ProximaNova-Semibold'), url('fonts/Proxima-Nova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'), url('fonts/Proxima-Nova/ProximaNova-Semibold.woff2') format('woff2'), url('fonts/Proxima-Nova/ProximaNova-Semibold.woff') format('woff'), url('fonts/Proxima-Nova/ProximaNova-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
@@ -29,16 +29,16 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('/fonts/Raleway/Raleway-Light.eot');
-    src: url('/fonts/Raleway/Raleway-Light.woff2') format('woff2'), url('/fonts/Raleway/Raleway-Light.woff') format('woff'), url('/fonts/Raleway/Raleway-Light.ttf') format('truetype');
+    src: url('fonts/Raleway/Raleway-Light.eot');
+    src: url('fonts/Raleway/Raleway-Light.woff2') format('woff2'), url('fonts/Raleway/Raleway-Light.woff') format('woff'), url('fonts/Raleway/Raleway-Light.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Raleway';
-    src: url('/fonts/Raleway/Raleway-ExtraBold.eot');
-    src: url('/fonts/Raleway/Raleway-ExtraBold.woff2') format('woff2'), url('/fonts/Raleway/Raleway-ExtraBold.woff') format('woff'), url('/fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype');
+    src: url('fonts/Raleway/Raleway-ExtraBold.eot');
+    src: url('fonts/Raleway/Raleway-ExtraBold.woff2') format('woff2'), url('fonts/Raleway/Raleway-ExtraBold.woff') format('woff'), url('fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
